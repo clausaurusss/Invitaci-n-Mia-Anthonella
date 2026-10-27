@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Baby Shower Safari · Mia Anthonella</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&family=Dancing+Script:wght@700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBF6EC;--sand:#EADBC4;--nude:#E2C3AE;--sage:#9CAF88;--olive:#66743F;--brown:#7A5C3E;--gold:#C49A3C;--ink:#4A3B2C;--card:#FFFCF5;--glow:rgba(196,154,60,.35);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2A2A1E;--sand:#3A3626;--nude:#6B5442;--sage:#7F9470;--olive:#A5B87A;--brown:#D9BE9C;--gold:#E0B85A;--ink:#F3EBDD;--card:#38352A}}
+:root[data-theme="dark"]{--bg:#2A2A1E;--sand:#3A3626;--nude:#6B5442;--sage:#7F9470;--olive:#A5B87A;--brown:#D9BE9C;--gold:#E0B85A;--ink:#F3EBDD;--card:#38352A}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.7 Nunito,system-ui,sans-serif;overflow-x:hidden;background-image:radial-gradient(var(--sand) 1px,transparent 1.5px);background-size:26px 26px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;margin:0;line-height:1.1;color:var(--brown)}
+h2{font-size:clamp(1.9rem,6vw,3rem);text-align:center;letter-spacing:.02em}
+p{margin:.8em 0}
+section{position:relative;padding:5rem 1.2rem;overflow:hidden}
+.wrap{max-width:760px;margin:0 auto;position:relative;z-index:2;text-align:center}
+.script{font-family:"Great Vibes",cursive;font-weight:400;color:var(--gold)}
+svg.an,svg.dec{position:absolute;pointer-events:none;overflow:visible}
+.sway{animation:sway 6s ease-in-out infinite;transform-origin:50% 100%}
+.sway2{animation:sway 8s ease-in-out infinite reverse;transform-origin:50% 100%}
+.bob{animation:bob 5s ease-in-out infinite}
+.fly{animation:fly 14s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(5deg)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes fly{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(40px,-24px) rotate(8deg)}}
+@keyframes spark{0%,100%{opacity:0;transform:scale(.4)}50%{opacity:1;transform:scale(1)}}
+.spark{position:absolute;color:var(--gold);animation:spark 3.5s ease-in-out infinite;font-size:1.4rem;pointer-events:none}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s}
+.rv.in{opacity:1;transform:none}
+.btn{display:inline-block;padding:1rem 2rem;min-height:56px;border-radius:999px;background:var(--olive);color:#FFFBF0;font:800 1rem Nunito,sans-serif;letter-spacing:.06em;text-decoration:none;border:0;cursor:pointer;box-shadow:0 6px 0 rgba(60,70,30,.35);transition:transform .25s,box-shadow .25s}
+.btn:hover,.btn:focus-visible{transform:translateY(-3px);box-shadow:0 9px 0 rgba(60,70,30,.35)}
+.btn:active{transform:translateY(3px);box-shadow:0 2px 0 rgba(60,70,30,.35)}
+.btn.gold{background:var(--gold)}.btn.brown{background:var(--brown)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.pulse{animation:pulse 2.6s infinite}
+@keyframes pulse{0%{box-shadow:0 6px 0 rgba(60,70,30,.35),0 0 0 0 var(--glow)}70%{box-shadow:0 6px 0 rgba(60,70,30,.35),0 0 0 22px transparent}100%{box-shadow:0 6px 0 rgba(60,70,30,.35),0 0 0 0 transparent}}
+
+body.locked{overflow:hidden;height:100svh}
+body.locked section:not(#hero),body.locked .fab,body.locked .up{display:none}
+/* HERO */
+#hero{min-height:100svh;display:flex;align-items:center;justify-content:center;background:linear-gradient(#F4E8D2,var(--bg) 85%);padding-top:4rem}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) #hero{background:linear-gradient(#3A3626,var(--bg))}}
+.arch{border:3px solid var(--gold);border-radius:999px 999px 24px 24px;padding:4rem 1.6rem 3rem;background:color-mix(in srgb,var(--card) 88%,transparent);max-width:520px;margin:0 auto;box-shadow:0 0 0 10px color-mix(in srgb,var(--sage) 30%,transparent)}
+.arch .k{font:800 .8rem Nunito;letter-spacing:.18em;color:var(--olive)}
+.arch h1{font-size:clamp(1.5rem,5vw,2.1rem);margin:.8rem 0 .2rem}
+.arch .bs{font:700 1.1rem "Cormorant Garamond";letter-spacing:.4em;color:var(--brown)}
+.arch .nm{font-family:"Dancing Script","Great Vibes",cursive;font-weight:700;font-size:clamp(2.6rem,12vw,4.4rem);color:var(--gold);line-height:1.05;margin:.1em 0 .2em}
+.arch p.q{font-style:italic;font-family:"Cormorant Garamond";font-size:1.2rem}
+.arch .d{font:800 .95rem Nunito;letter-spacing:.14em;color:var(--brown);margin-top:1rem}
+
+/* COUNTDOWN */
+#count{background:var(--sand)}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:.7rem;margin-top:2rem}
+.cd div{background:var(--card);border:2px dashed var(--sage);border-radius:30px 30px 14px 14px;padding:1.3rem .3rem .8rem;position:relative}
+.cd div::before{content:"🐾";position:absolute;top:-14px;left:50%;transform:translateX(-50%);font-size:1.1rem}
+.cd b{display:block;font:700 clamp(1.8rem,8vw,3.2rem) "Cormorant Garamond";color:var(--olive);line-height:1}
+.cd span{font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+#cdmsg{font:700 clamp(1.4rem,5vw,2rem) "Cormorant Garamond";color:var(--olive);margin-top:1.5rem}
+
+/* INFO */
+#info .rows{display:grid;gap:1rem;margin:2.2rem auto 0;max-width:460px;text-align:left}
+.row{display:flex;gap:1rem;align-items:center;background:var(--card);padding:1rem 1.3rem;border-left:8px solid var(--sage);border-radius:6px 40px 40px 6px}
+.row:nth-child(even){border-left-color:var(--nude);margin-left:1.5rem}
+.row i{font-style:normal;font-size:1.8rem}.row small{display:block;font-weight:800;color:var(--olive);letter-spacing:.08em}
+.sign{display:inline-block;background:var(--brown);color:#FFF6E4;padding:.5rem 1.2rem;border-radius:6px;font:700 1.1rem "Cormorant Garamond";transform:rotate(-3deg);margin-top:2rem;box-shadow:0 4px 0 rgba(0,0,0,.2)}
+
+/* MAPA */
+#mapa{background:linear-gradient(var(--bg),#E6EBD3 40%,var(--bg))}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) #mapa{background:var(--bg)}}
+#mapa .wrap{padding:2.5rem 1.2rem;border-radius:48% 52% 45% 55%/12% 10% 12% 10%;background:color-mix(in srgb,var(--sage) 22%,transparent)}
+#mapa .btn{margin-top:1rem;font-size:1.05rem}
+
+/* DRESS */
+#dress{background:var(--sand)}
+.sw-row{display:flex;flex-wrap:wrap;justify-content:center;gap:1.1rem;margin:2rem 0 1rem}
+.blob{width:84px;text-align:center;font-size:.72rem;font-weight:800;letter-spacing:.04em}
+.blob i{display:block;width:76px;height:76px;margin:0 auto .4rem;border-radius:58% 42% 55% 45%/48% 56% 44% 52%;box-shadow:inset 0 0 12px rgba(0,0,0,.12),0 4px 10px rgba(0,0,0,.1)}
+.blob:nth-child(even) i{border-radius:44% 56% 42% 58%/55% 45% 55% 45%}
+.dress-tag{font:700 clamp(1.1rem,4vw,1.6rem) "Cormorant Garamond";letter-spacing:.3em;color:var(--olive);margin:.6rem 0 1rem}
+
+/* RSVP */
+#rsvp{background:linear-gradient(var(--bg),#F0E3CB)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) #rsvp{background:var(--bg)}}
+.fam{display:grid;gap:1.5rem;margin-top:2.2rem}
+@media(min-width:700px){.fam{grid-template-columns:1fr 1fr}.wrap.wide{max-width:900px}}
+.card{background:var(--card);border-radius:28px;padding:2rem 1.4rem;border:2px solid var(--nude);position:relative;box-shadow:0 10px 24px rgba(120,90,50,.15)}
+.card.mom{border-radius:28px 80px 28px 28px;border-color:var(--nude)}
+.card.dad{border-radius:80px 28px 28px 28px;border-color:var(--sage)}
+.card h3{font-size:1.7rem}.card .num{font-weight:800;color:var(--olive);letter-spacing:.05em}
+.note{font-size:.88rem;opacity:.85;margin-top:1.4rem}
+
+.guest{display:grid;gap:1rem;max-width:520px;margin:2rem auto 0;padding:1.5rem 1.3rem;background:var(--card);border:2px dashed var(--gold);border-radius:30px;text-align:left}
+@media(min-width:560px){.guest{grid-template-columns:2fr 1fr}.guest .full{grid-column:1/-1}}
+.guest label{display:block;font-weight:800;font-size:.85rem;letter-spacing:.06em;color:var(--olive);margin-bottom:.3rem}
+.guest input{width:100%;min-height:52px;padding:.7rem 1rem;font:600 1.05rem Nunito,sans-serif;color:var(--ink);background:var(--bg);border:2px solid var(--nude);border-radius:16px}
+.guest input:focus{outline:3px solid var(--gold);outline-offset:2px;border-color:var(--gold)}
+#gErr{color:#B0442F;font-weight:800;font-size:.9rem;margin:0}
+/* EMOTIVA */
+#emo{background:var(--sand);padding-bottom:6rem}
+.garden{width:min(86vw,460px);margin:0 auto 2rem;position:relative}
+.hl{font:600 clamp(1.5rem,5.5vw,2.3rem)/1.25 "Cormorant Garamond";font-style:italic;color:var(--olive);border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);padding:1.2rem .5rem;margin-top:2rem}
+
+/* CIERRE */
+#cierre{background:linear-gradient(var(--bg),#DDE3C4);padding-bottom:9rem}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) #cierre{background:var(--bg)}}
+#cierre h2{margin-bottom:1rem}
+.fd{font:800 .95rem Nunito;letter-spacing:.14em;color:var(--brown);margin-top:1.4rem}
+
+/* FLOTANTES */
+.fab{position:fixed;z-index:50;right:max(1rem,env(safe-area-inset-right,0px));bottom:max(1rem,env(safe-area-inset-bottom,0px));min-height:56px;padding:0 1.3rem;font-size:.9rem;display:flex;align-items:center;text-decoration:none}
+.up{position:fixed;z-index:50;left:max(1rem,env(safe-area-inset-left,0px));bottom:max(1rem,env(safe-area-inset-bottom,0px));width:52px;height:52px;border-radius:50%;border:2px solid var(--gold);background:var(--card);color:var(--brown);font-size:1.3rem;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s}
+.up.show{opacity:1;pointer-events:auto}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<script>document.body.classList.add("locked")</script>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="leaf" viewBox="0 0 60 120"><path d="M30 118C2 80 4 30 30 2c26 28 28 78 0 116z" fill="currentColor"/><path d="M30 12v100" stroke="#fff" stroke-opacity=".45" stroke-width="2"/></symbol>
+<symbol id="palm" viewBox="0 0 200 200"><g fill="currentColor"><path d="M100 190C90 120 100 60 100 20c14 40 14 110 0 170z"/><path d="M100 120C60 100 25 105 5 130c40-8 70-4 95 8z"/><path d="M100 120C140 100 175 105 195 130c-40-8-70-4-95 8z"/><path d="M100 80C70 55 40 50 18 62c38 0 62 8 82 26z"/><path d="M100 80c30-25 60-30 82-18-38 0-62 8-82 26z"/></g></symbol>
+<symbol id="paw" viewBox="0 0 40 40"><g fill="currentColor"><ellipse cx="20" cy="26" rx="9" ry="7.5"/><circle cx="8" cy="16" r="4"/><circle cx="16" cy="9" r="4"/><circle cx="25" cy="9" r="4"/><circle cx="33" cy="16" r="4"/></g></symbol>
+<symbol id="bfly" viewBox="0 0 50 40"><g fill="currentColor"><path d="M25 20C10 0 0 6 4 20c3 10 14 8 21 0z"/><path d="M25 20C40 0 50 6 46 20c-3 10-14 8-21 0z"/><path d="M25 22c-8 6-12 16-6 17 5 0 8-7 6-17zm0 0c8 6 12 16 6 17-5 0-8-7-6-17z" opacity=".7"/></g></symbol>
+<symbol id="balloon" viewBox="0 0 50 110"><ellipse cx="25" cy="28" rx="21" ry="26" fill="currentColor"/><path d="M25 54l-4 7h8z" fill="currentColor"/><path d="M25 61c-6 14 6 24 0 46" stroke="#8B6B4A" fill="none" stroke-width="1.5"/><ellipse cx="17" cy="19" rx="4" ry="8" fill="#fff" opacity=".4"/></symbol>
+<symbol id="giraffe" viewBox="0 0 130 190">
+<g stroke="#B7863A" stroke-width="3" stroke-linecap="round"><path d="M72 22l-2-14M84 20l3-13"/></g><circle cx="70" cy="7" r="4" fill="#8B6B4A"/><circle cx="87" cy="6" r="4" fill="#8B6B4A"/>
+<rect x="64" y="40" width="22" height="86" rx="11" fill="#EBC472"/>
+<rect x="40" y="150" width="11" height="38" rx="5" fill="#E3B866"/><rect x="58" y="154" width="11" height="34" rx="5" fill="#E3B866"/><rect x="86" y="150" width="11" height="38" rx="5" fill="#E3B866"/><rect x="104" y="154" width="11" height="34" rx="5" fill="#E3B866"/>
+<ellipse cx="78" cy="136" rx="42" ry="28" fill="#EBC472"/>
+<ellipse cx="82" cy="30" rx="26" ry="17" fill="#EBC472"/><ellipse cx="100" cy="38" rx="12" ry="10" fill="#F6DCA8"/>
+<circle cx="86" cy="28" r="3.5" fill="#4A3B2C"/><circle cx="87" cy="27" r="1" fill="#fff"/><circle cx="104" cy="37" r="1.6" fill="#8B6B4A"/><ellipse cx="62" cy="24" rx="7" ry="4" fill="#E3B866" transform="rotate(-25 62 24)"/>
+<g fill="#B7863A" opacity=".75"><circle cx="75" cy="60" r="5"/><circle cx="76" cy="88" r="6"/><circle cx="74" cy="112" r="5"/><circle cx="60" cy="130" r="7"/><circle cx="88" cy="140" r="8"/><circle cx="104" cy="128" r="5"/></g></symbol>
+<symbol id="elephant" viewBox="0 0 150 130">
+<ellipse cx="86" cy="76" rx="46" ry="34" fill="#D6C3AE"/>
+<rect x="52" y="92" width="16" height="36" rx="7" fill="#CDB9A3"/><rect x="104" y="92" width="16" height="36" rx="7" fill="#CDB9A3"/>
+<circle cx="40" cy="52" r="28" fill="#D6C3AE"/><ellipse cx="62" cy="52" rx="16" ry="26" fill="#C7B19A"/><ellipse cx="62" cy="52" rx="9" ry="19" fill="#E6BFB0" opacity=".7"/>
+<path d="M22 66c-14 8-14 30-6 42 4 6 12 2 8-4-5-9-3-18 8-26z" fill="#D6C3AE"/>
+<circle cx="34" cy="46" r="3.5" fill="#4A3B2C"/><circle cx="35" cy="45" r="1" fill="#fff"/><circle cx="30" cy="58" r="4" fill="#E6BFB0" opacity=".7"/>
+<path d="M132 70c8 2 10 10 6 16" stroke="#C7B19A" stroke-width="4" fill="none" stroke-linecap="round"/></symbol>
+<symbol id="lion" viewBox="0 0 120 120">
+<g fill="#C79A5C"><circle cx="60" cy="58" r="46"/><circle cx="22" cy="40" r="14"/><circle cx="98" cy="40" r="14"/><circle cx="30" cy="92" r="14"/><circle cx="90" cy="92" r="14"/><circle cx="60" cy="14" r="14"/></g>
+<circle cx="60" cy="62" r="34" fill="#F0CF98"/><circle cx="34" cy="34" r="9" fill="#F0CF98"/><circle cx="86" cy="34" r="9" fill="#F0CF98"/><circle cx="34" cy="34" r="4" fill="#E2B5A0"/><circle cx="86" cy="34" r="4" fill="#E2B5A0"/>
+<circle cx="47" cy="56" r="3.6" fill="#4A3B2C"/><circle cx="73" cy="56" r="3.6" fill="#4A3B2C"/><ellipse cx="60" cy="68" rx="8" ry="5.5" fill="#B9786A"/><path d="M60 73v6M52 80c4 4 12 4 16 0" stroke="#7A5C3E" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="40" cy="68" r="4.5" fill="#E8A99A" opacity=".5"/><circle cx="80" cy="68" r="4.5" fill="#E8A99A" opacity=".5"/></symbol>
+</defs></svg>
+
+<!-- PORTADA -->
+<section id="hero">
+  <svg class="dec sway" style="left:-30px;top:-10px;width:170px;color:var(--olive)" viewBox="0 0 200 200"><use href="#palm"/></svg>
+  <svg class="dec sway2" style="right:-30px;top:-10px;width:170px;color:var(--sage);transform:scaleX(-1)" viewBox="0 0 200 200"><use href="#palm"/></svg>
+  <svg class="dec bob" style="left:6%;top:28%;width:38px;color:var(--nude)" viewBox="0 0 50 110"><use href="#balloon"/></svg>
+  <svg class="dec bob" style="right:8%;top:22%;width:44px;color:#fff;filter:drop-shadow(0 0 2px var(--nude))" viewBox="0 0 50 110"><use href="#balloon"/></svg>
+  <svg class="dec fly" style="right:14%;top:12%;width:34px;color:var(--gold)" viewBox="0 0 50 40"><use href="#bfly"/></svg>
+  <span class="spark" style="left:20%;top:20%">✦</span><span class="spark" style="right:22%;top:36%;animation-delay:1.5s">✦</span>
+  <svg class="dec bob" style="left:-4px;bottom:-4px;width:min(34vw,180px)" viewBox="0 0 130 190"><use href="#giraffe"/></svg>
+  <svg class="dec bob" style="right:-6px;bottom:-4px;width:min(34vw,190px);animation-delay:1s" viewBox="0 0 150 130"><use href="#elephant"/></svg>
+  <svg class="dec bob" style="left:50%;margin-left:-45px;bottom:-14px;width:90px;animation-delay:2s" viewBox="0 0 120 120"><use href="#lion"/></svg>
+  <div class="wrap rv">
+    <div class="arch">
+      <div class="k">¡UNA PEQUEÑA AVENTURA ESTÁ POR COMENZAR!</div>
+      <h1>BABY SHOWER</h1>
+      <div class="nm" id="babyName">MIA ANTHONELLA</div>
+      <p class="q">“Una pequeña princesa está por llegar para llenar nuestras vidas de amor, ternura y felicidad. Queremos celebrar contigo esta aventura tan especial.”</p>
+      <div class="d">DOMINGO · 15 DE NOVIEMBRE DE 2026<br>3:00 P. M.</div>
+      <p style="margin-top:1.6rem"><button type="button" class="btn pulse" id="openBtn">ENTRAR A LA AVENTURA</button></p>
+    </div>
+    <div style="height:7rem"></div>
+  </div>
+</section>
+
+<!-- CONTADOR -->
+<section id="count">
+  <svg class="dec sway" style="right:-20px;top:0;width:90px;color:var(--sage)" viewBox="0 0 60 120"><use href="#leaf"/></svg>
+  <svg class="dec" style="left:4%;bottom:10px;width:36px;color:var(--brown);opacity:.35;transform:rotate(-20deg)" viewBox="0 0 40 40"><use href="#paw"/></svg>
+  <svg class="dec" style="left:12%;bottom:50px;width:30px;color:var(--brown);opacity:.3;transform:rotate(10deg)" viewBox="0 0 40 40"><use href="#paw"/></svg>
+  <div class="wrap rv">
+    <h2>¡LA AVENTURA COMIENZA EN…!</h2>
+    <div class="cd" id="cd" role="timer" aria-live="off">
+      <div><b id="dd">--</b><span>Días</span></div><div><b id="hh">--</b><span>Horas</span></div><div><b id="mm">--</b><span>Minutos</span></div><div><b id="ss">--</b><span>Segundos</span></div>
+    </div>
+    <p id="cdmsg" hidden></p>
+  </div>
+</section>
+
+<!-- INFO -->
+<section id="info">
+  <svg class="dec sway2" style="left:-24px;top:30px;width:100px;color:var(--olive);opacity:.8" viewBox="0 0 60 120"><use href="#leaf"/></svg>
+  <svg class="dec bob" style="right:-6px;top:40px;width:min(30vw,150px)" viewBox="0 0 130 190"><use href="#giraffe"/></svg>
+  <div class="wrap rv">
+    <h2>¡PREPÁRATE PARA NUESTRA AVENTURA SAFARI!</h2>
+    <div class="rows">
+      <div class="row"><i>🎀</i><div><small>CELEBRACIÓN</small>Baby Shower de Mia Anthonella</div></div>
+      <div class="row"><i>📅</i><div><small>FECHA</small>Domingo 15 de noviembre de 2026</div></div>
+      <div class="row"><i>🕒</i><div><small>HORA</small>3:00 p. m.</div></div>
+      <div class="row"><i>📍</i><div><small>LUGAR</small>Consulta el enlace de ubicación</div></div>
+    </div>
+    <div class="sign">⬅ Safari · Mia Anthonella ➡</div>
+  </div>
+  <svg class="dec bob" style="left:2%;bottom:6px;width:80px;animation-delay:1s" viewBox="0 0 120 120"><use href="#lion"/></svg>
+</section>
+
+<!-- MAPA -->
+<section id="mapa">
+  <svg class="dec sway" style="left:-30px;top:20px;width:150px;color:var(--olive)" viewBox="0 0 200 200"><use href="#palm"/></svg>
+  <svg class="dec sway2" style="right:-30px;bottom:10px;width:150px;color:var(--sage);transform:scaleX(-1)" viewBox="0 0 200 200"><use href="#palm"/></svg>
+  <svg class="dec bob" style="right:6%;top:2rem;width:110px" viewBox="0 0 150 130"><use href="#elephant"/></svg>
+  <div class="wrap rv">
+    <h2>¡NOS VEMOS EN LA SELVA!</h2>
+    <p>“Prepara tu espíritu aventurero y acompáñanos a celebrar la llegada de nuestra pequeña Mia Anthonella. ¡Te esperamos para compartir una tarde inolvidable!”</p>
+    <a class="btn gold" id="mapBtn" target="_blank" rel="noopener noreferrer" href="https://share.google/12l4Lnkfq2qTvsaVT">📍 VER UBICACIÓN Y CÓMO LLEGAR</a>
+  </div>
+</section>
+
+<!-- DRESS CODE -->
+<section id="dress">
+  <svg class="dec sway" style="right:-20px;top:10px;width:90px;color:var(--olive)" viewBox="0 0 60 120"><use href="#leaf"/></svg>
+  <svg class="dec fly" style="left:8%;top:30px;width:34px;color:var(--nude)" viewBox="0 0 50 40"><use href="#bfly"/></svg>
+  <div class="wrap rv">
+    <h2>DRESS CODE</h2>
+    <div class="dress-tag">NUDE · BLANCO · BEIGE</div>
+    <p>“Queremos que nuestra celebración esté llena de armonía, ternura y tonos suaves. Te invitamos a acompañarnos con un look en tonos nude, blanco, beige o neutros cálidos. ¡Gracias por ser parte de este día tan especial!”</p>
+    <div class="sw-row">
+      <div class="blob"><i style="background:#E2C3AE"></i>NUDE</div>
+      <div class="blob"><i style="background:#FFFBF0"></i>BLANCO CREMA</div>
+      <div class="blob"><i style="background:#E8D5B5"></i>BEIGE ARENA</div>
+      <div class="blob"><i style="background:#CDAE85"></i>ARENA CÁLIDA</div>
+      <div class="blob"><i style="background:#A98462"></i>MARRÓN CLARO</div>
+    </div>
+    <div style="font-size:2rem;letter-spacing:.5rem" aria-hidden="true">👗🌼🌿👔</div>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section id="rsvp">
+  <svg class="dec sway2" style="left:-24px;top:0;width:110px;color:var(--sage)" viewBox="0 0 60 120"><use href="#leaf"/></svg>
+  <svg class="dec bob" style="right:2%;top:10px;width:40px;color:var(--nude)" viewBox="0 0 50 110"><use href="#balloon"/></svg>
+  <div class="wrap wide rv">
+    <h2>¿NOS ACOMPAÑAS A ESTA GRAN AVENTURA?</h2>
+    <p>Tu presencia hará que este día sea aún más especial. Confírmanos tu asistencia para celebrar juntos la llegada de nuestra pequeña Mia Anthonella.</p>
+    <div class="guest">
+      <div><label for="gName">TU NOMBRE</label><input id="gName" type="text" autocomplete="name" placeholder="Escribe tu nombre" maxlength="60"></div>
+      <div><label for="gCount">¿CUÁNTAS PERSONAS VAN?</label><input id="gCount" type="number" inputmode="numeric" min="1" max="20" value="1"></div>
+      <p id="gErr" class="full" role="alert" hidden></p>
+    </div>
+    <div class="fam">
+      <article class="card mom">
+        <h3>INVITADOS DE LA MAMÁ</h3>
+        <p>Si recibiste tu invitación de parte de la mamá, confirma aquí tu asistencia.</p>
+        <p class="num">+57 310 267 7002</p>
+        <a class="btn" id="btnMom" target="_blank" rel="noopener noreferrer" href="#">CONFIRMAR CON LA MAMÁ 💗</a>
+      </article>
+      <article class="card dad">
+        <h3>INVITADOS DEL PAPÁ</h3>
+        <p>Si recibiste tu invitación de parte del papá, confirma aquí tu asistencia.</p>
+        <p class="num">+57 322 829 8887</p>
+        <a class="btn brown" id="btnDad" target="_blank" rel="noopener noreferrer" href="#">CONFIRMAR CON EL PAPÁ 🤎</a>
+      </article>
+    </div>
+    <p class="note">Completa tu nombre y la cantidad de personas, y toca el botón de quien te invitó. Se abrirá WhatsApp con el mensaje listo: la asistencia queda confirmada cuando lo envíes.</p>
+  </div>
+</section>
+
+<!-- EMOTIVA -->
+<section id="emo">
+  <svg class="dec sway" style="left:-30px;top:20px;width:140px;color:var(--olive)" viewBox="0 0 200 200"><use href="#palm"/></svg>
+  <svg class="dec sway2" style="right:-30px;top:20px;width:140px;color:var(--olive);transform:scaleX(-1)" viewBox="0 0 200 200"><use href="#palm"/></svg>
+  <div class="wrap rv">
+    <div class="garden">
+      <svg viewBox="0 0 460 330" style="width:100%;display:block" aria-hidden="true">
+        <path d="M30 330V150C30 50 120 10 230 10s200 40 200 140v180" fill="none" stroke="var(--sage)" stroke-width="16" stroke-linecap="round"/>
+        <g fill="var(--olive)"><use href="#leaf" x="14" y="60" width="40" height="80" transform="rotate(-20 34 100)"/><use href="#leaf" x="406" y="60" width="40" height="80" transform="rotate(20 426 100)"/><use href="#leaf" x="190" y="-6" width="40" height="70"/></g>
+        <g fill="#F2C9C0"><circle cx="90" cy="60" r="9"/><circle cx="370" cy="60" r="9"/><circle cx="230" cy="14" r="9"/></g>
+        <g transform="translate(160 210)"><rect x="0" y="40" width="140" height="10" rx="5" fill="var(--brown)"/><path d="M10 40v-30h120v30z" fill="var(--nude)"/><path d="M10 10h120" stroke="var(--brown)" stroke-width="6"/><path d="M20 40c10-20 30-20 40 0M80 40c10-20 30-20 40 0" fill="#fff" opacity=".6"/><rect x="14" y="50" width="6" height="30" fill="var(--brown)"/><rect x="120" y="50" width="6" height="30" fill="var(--brown)"/></g>
+        <use href="#giraffe" x="50" y="150" width="80" height="116"/>
+        <use href="#elephant" x="310" y="200" width="100" height="87"/>
+        <use href="#lion" x="150" y="262" width="60" height="60"/>
+      </svg>
+    </div>
+    <p>Hay aventuras que comienzan con una pequeña huella y se convierten en el amor más grande de nuestras vidas.</p>
+    <p>Esperamos con muchísima ilusión a nuestra pequeña Mia Anthonella y queremos compartir contigo la alegría de su llegada.</p>
+    <p>Gracias por acompañarnos en este capítulo tan bonito de nuestra historia.</p>
+    <div class="hl">“La aventura más bonita de nuestras vidas está por comenzar.”</div>
+  </div>
+</section>
+
+<!-- CIERRE -->
+<section id="cierre">
+  <svg class="dec sway" style="left:-30px;top:0;width:160px;color:var(--olive)" viewBox="0 0 200 200"><use href="#palm"/></svg>
+  <svg class="dec sway2" style="right:-30px;top:0;width:160px;color:var(--sage);transform:scaleX(-1)" viewBox="0 0 200 200"><use href="#palm"/></svg>
+  <svg class="dec bob" style="left:12%;top:30%;width:34px;color:var(--nude)" viewBox="0 0 50 110"><use href="#balloon"/></svg>
+  <svg class="dec bob" style="right:12%;top:34%;width:34px;color:#fff;filter:drop-shadow(0 0 2px var(--nude))" viewBox="0 0 50 110"><use href="#balloon"/></svg>
+  <span class="spark" style="left:30%;top:18%">✦</span><span class="spark" style="right:28%;top:26%;animation-delay:2s">✦</span>
+  <svg class="dec bob" style="left:-4px;bottom:-4px;width:min(30vw,160px)" viewBox="0 0 130 190"><use href="#giraffe"/></svg>
+  <svg class="dec bob" style="right:-6px;bottom:-4px;width:min(32vw,170px);animation-delay:1s" viewBox="0 0 150 130"><use href="#elephant"/></svg>
+  <svg class="dec bob" style="left:50%;margin-left:-50px;bottom:-14px;width:100px;animation-delay:2s" viewBox="0 0 120 120"><use href="#lion"/></svg>
+  <div class="wrap rv">
+    <h2>¡GRACIAS POR SER PARTE DE NUESTRA AVENTURA!</h2>
+    <p>“Te esperamos para celebrar la llegada de nuestra pequeña Mia Anthonella. ¡Será un día lleno de amor, sonrisas y recuerdos inolvidables!”</p>
+    <div class="script" style="font-size:clamp(2.6rem,11vw,4rem)">Mia Anthonella</div>
+    <div class="fd">15 DE NOVIEMBRE DE 2026 · 3:00 P. M.</div>
+  </div>
+</section>
+
+<a class="btn fab" href="#rsvp">💗 CONFIRMAR ASISTENCIA</a>
+<button class="up" id="up" aria-label="Volver al inicio">↑</button>
+
+<script>
+// ====== CONFIGURACIÓN EDITABLE ======
+const CONFIG = {
+  eventISO: "2026-11-15T15:00:00-05:00", // 3:00 p. m. hora de Colombia
+  eventDay: "2026-11-15",
+  tz: "America/Bogota",
+  mapsUrl: "https://share.google/12l4Lnkfq2qTvsaVT",
+  mom: { phone: "573102677002", who: "la mamá" },
+  dad: { phone: "573228298887", who: "el papá" }
+};
+// ====================================
+const $ = id => document.getElementById(id);
+$("mapBtn").href = CONFIG.mapsUrl;
+function wa(p){
+  const name = $("gName").value.trim();
+  const n = Math.min(20, Math.max(1, parseInt($("gCount").value, 10) || 1));
+  const msg = "¡Hola! 🤍 Quiero confirmar mi asistencia al Baby Shower de MIA ANTHONELLA. Mi nombre es " + name + " y asistiremos " + n + " persona(s). ¡Muchas gracias por la invitación!";
+  return "https://wa.me/" + p.phone + "?text=" + encodeURIComponent(msg);
+}
+[["btnMom", CONFIG.mom], ["btnDad", CONFIG.dad]].forEach(([id, p]) => {
+  const b = $(id); b.href = wa(p);
+  b.addEventListener("click", e => {
+    const err = $("gErr");
+    if (!$("gName").value.trim()){
+      e.preventDefault();
+      err.textContent = "Escribe tu nombre antes de confirmar."; err.hidden = false;
+      $("gName").focus(); return;
+    }
+    err.hidden = true; b.href = wa(p);
+  });
+});
+
+const target = new Date(CONFIG.eventISO).getTime();
+const two = n => String(n).padStart(2, "0");
+function tick(){
+  const now = Date.now(), diff = target - now;
+  const today = new Intl.DateTimeFormat("en-CA", {timeZone: CONFIG.tz}).format(new Date());
+  const msg = $("cdmsg");
+  if (diff <= 0){
+    $("cd").hidden = true; msg.hidden = false;
+    msg.textContent = today === CONFIG.eventDay
+      ? "¡HOY COMIENZA LA AVENTURA DE MIA ANTHONELLA!"
+      : "¡Gracias por celebrar con nosotros la llegada de Mia Anthonella! 💗";
+    return;
+  }
+  $("cd").hidden = false;
+  msg.hidden = today !== CONFIG.eventDay;
+  if (!msg.hidden) msg.textContent = "¡HOY COMIENZA LA AVENTURA DE MIA ANTHONELLA!";
+  const s = Math.floor(diff / 1000);
+  $("dd").textContent = Math.floor(s / 86400);
+  $("hh").textContent = two(Math.floor(s % 86400 / 3600));
+  $("mm").textContent = two(Math.floor(s % 3600 / 60));
+  $("ss").textContent = two(s % 60);
+}
+tick(); setInterval(tick, 1000);
+
+// Aparición al desplazarse
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } }), {threshold:.15});
+document.querySelectorAll(".rv").forEach(el => io.observe(el));
+
+// Parallax sutil y botón de volver arriba
+const up = $("up"), decs = document.querySelectorAll("svg.dec.sway, svg.dec.sway2");
+const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+up.onclick = () => scrollTo({top:0, behavior: still ? "auto" : "smooth"});
+$("openBtn").addEventListener("click", () => {
+  document.body.classList.remove("locked");
+  $("openBtn").classList.remove("pulse");
+  $("count").scrollIntoView({behavior: still ? "auto" : "smooth"});
+});
+let raf;
+addEventListener("scroll", () => {
+  up.classList.toggle("show", scrollY > 600);
+  if (still || raf) return;
+  raf = requestAnimationFrame(() => { raf = 0; decs.forEach((d,i) => d.style.translate = "0 " + (scrollY * (i % 2 ? .02 : -.02)) % 40 + "px"); });
+}, {passive:true});
+</script>
+</body>
+</html>
